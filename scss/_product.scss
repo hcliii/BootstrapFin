@@ -1,0 +1,51 @@
+.brand{
+    background: #916000;
+    .container ul li{
+    .CHANEL{
+        padding: 14px 14px 14px 0;
+    }
+    .JoMalone{
+        padding: 14px;
+    }
+    }
+    @include md{
+        display: none;
+    }
+}
+
+.login{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    @include md{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .row {
+
+    .col-md-8 .login-img{
+    max-width: 730px;
+    height: 730px;
+    background: url(/image/login1.jpg);
+    background-position: center;
+    background-size: cover;
+    @include md{
+        height: 220px;
+    }
+    }
+
+    .col-md-4{
+        h2{
+            @include md{
+                margin-top: 28px;
+            }
+        }
+        .pw-btn{
+            margin-top: 36px;
+            @include md{
+                margin-bottom: 66px;
+            }
+        }
+    }
+    
+    }
+}

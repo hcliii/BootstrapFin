@@ -1,0 +1,313 @@
+body{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.header{
+    .logo{
+        margin: 9px 0;
+    }
+    .logo a{
+        display: block;
+        width: 128px;
+        height: 38px;
+        background: url(/image/d’Perfume.png);
+        cursor: pointer;
+        @include text-indent;
+    }
+    .container{
+        .cart-and-menu{
+        .menu{
+            @include md{
+                max-height: 0px;
+                overflow: hidden;
+                transition: max-height 2.3s;
+                flex-direction: column;
+                position: absolute;
+                z-index: 100;
+                top: 56px;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+            li{
+                @include md{
+                    background: #fff;
+                    border-top: 1px solid rgb(167, 167, 167);
+                    &:hover{
+                        background: rgb(219, 219, 219);
+                    }
+                }
+            }
+        }
+
+        .menu-show{
+            max-height: 500px
+          }
+
+        .showcart{
+            display: none;
+            border: none;
+            color: #8D8D8D;
+            font-size: 20px;
+            background: none;
+            @include md{
+                display: block;
+        }}
+        
+        .showmenu{
+        display: none;
+        border: none;
+        color: #8D8D8D;
+        font-size: 20px;
+        background: none;
+        @include md{
+            display: block;
+        }
+    }}
+    }
+}
+
+.banner{
+    max-width: 100%;
+    height: 870px;
+    background: url(/image/index1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 295px 0;
+    @include md{
+        height: 480px;
+        padding: 120px 0;
+    }
+    .banner-text a{
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+            border: 2px solid #FFFFFF;
+            border-radius: 30px;
+            background: none;
+            &:hover{
+                background: rgba(255, 255, 255, 0.2);
+            }
+    }
+}
+
+.product{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include md{
+        margin: 40px auto;
+    }
+    .row{
+        padding: 0 15px;
+        .img{
+            .product-img1{
+                height: 555px;
+                background-image: url(/image/index2.jpg);
+                background-position: center;
+                background-size: cover;
+                @include moblie{
+                    height: 350px;
+                }
+            }
+            .product-img2{
+                height: 555px;
+                background-image: url(/image/index3.png);
+                background-position: center;
+                background-size: cover;
+                @include moblie{
+                    height: 350px;
+                }
+            }
+            .product-img3{
+                height: 555px;
+                background-image: url(/image/index4.jpg);
+                background-position: left;
+                background-size: cover;
+                @include moblie{
+                    height: 350px;
+                }
+            }
+            .product-img4{
+                height: 1080px;
+                background-image: url(/image/index5.jpg);
+                background-position: center;
+                background-size: cover;
+                @include moblie{
+                    height: 680px;
+                }
+            }
+        }
+        .col-lg-6 .text{
+            max-width: 350px;
+            &.feature-text a{
+                color: #000;
+                font-weight: 500;
+                padding: 15px 0;
+                width: 350px;
+                display: block;
+                text-align: center;
+                border: 2px solid #000;
+                border-radius: 30px;
+                background: none;
+                &:hover{
+                        color: #000;
+                        background: rgba(0, 0, 0, 0.1);}
+            }
+            @include lg{
+                max-width: 690px;
+                margin: 8px 0 32px 0;
+            }
+        }
+    }
+}
+
+.list{
+    padding: 40px 0;
+    background: #E0E0E0;
+    ul li{
+        .perfume-img1{
+            width: 100%;
+            height: 540px;
+            background-image: url(/image/index6.jpg);
+            background-position: bottom;
+            background-size: cover;
+            &:hover{
+                opacity: 0.7;
+                cursor: pointer;
+                }
+            @include md{
+                height: 350px;
+            }
+        }
+
+        .perfume-img2{
+            width: 100%;
+            height: 540px;
+            background-image: url(/image/index7.jpg);
+            background-position: bottom;
+            background-size: cover;
+            &:hover{
+                opacity: 0.7;
+                cursor: pointer;
+            }
+            @include md{
+                height: 350px;
+                margin-top: 32px;
+            }
+        }
+
+        .perfume-img3{
+            width: 100%;
+            height: 540px;
+            background-image: url(/image/index8.jpg);
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                opacity: 0.7;
+                cursor: pointer;
+            }
+            p{
+                width: 100%;
+                height: 540px;
+                font-size: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFF;
+                background: rgba(0,0,0,0.3);
+                @include md{
+                height: 350px;
+            }
+            }
+            @include md{
+                height: 350px;
+                margin-top: 32px;
+            }
+        }
+
+        .price-sale{
+            color: #8D8D8D;
+        }
+    }
+}
+
+.recycling{
+    padding: 60px 15px;
+    @include md{
+        padding: 40px 15px;
+    }
+    .recycling-img{
+        max-width: 730px;
+        height: 520px;
+        background-image: url(/image/index9.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .recycling-text{
+        @include md{
+            margin-top: 8px;
+        }
+    }
+}
+
+.subscribe{
+    height: 600px;
+    background-image: url(/image/index10.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 312px;
+    .container .row .col-md-4{
+        h2{
+        margin-bottom: 20px;
+        color: #8D8D8D;
+        }
+       .input-group {
+           height: 58px;
+           border: 2px solid #916000;
+           border-radius: 6px;
+           .btn{
+           color: #fff;
+           background: #916000;
+           border: none;
+        }
+       }
+}
+
+}
+
+.footer{
+    background: #916000;
+    .container {
+
+    .footer-left{ 
+    .footer-logo a{
+        margin: 20px 0;
+        display: block;
+        width: 128px;
+        height: 38px;
+        background: url(/image/d’Perfumewhite.png);
+        cursor: pointer;
+        @include text-indent ;
+    }
+    p{
+        margin-left: 20px;
+        @include md{font-size: 14px;}
+    }
+    }
+    ul{
+        li{
+            margin-left: 36px;
+        }
+        @include md{
+            display: none;
+        }
+    }
+    
+    }
+}
